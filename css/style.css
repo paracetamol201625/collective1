@@ -1,8 +1,17 @@
 body {
 	margin: 0;
-	font-family: sans-serif;
+	font-family: Arial, sans-serif;
+	font-size: 24px;
+	line-height: 34px;
 	background:  #fff;
 	color: #000983;
+}
+.resize {
+ position: relative;
+ margin: 0 auto;
+ width: 946px;
+ padding: 0 15px;
+
 }
 
 .dark {
@@ -11,13 +20,17 @@ body {
 }
 h1 {
 	font-size: 96px;
-	line-height: 112px;
+	line-height: 124px;
+	letter-spacing: -1.5px;
 }
 
 h2 {
 	position: relative;
 	font-size: 36px;
 	line-height: 48px;
+	text-align: center;
+	font-weight: normal;
+	letter-spacing: -0.5px;
 }
 h3{
 	font-size:  34px;
@@ -25,8 +38,9 @@ h3{
 }
 h2:after{
 	content: " ";
+	position: absolute;
 	left: 50%;
-	bottom: 10px;
+	bottom: -5px;
 	width: 60px;
 	height: 1px;
 	background: #000983;
@@ -34,4 +48,41 @@ h2:after{
 }
 .dark h2:after {
 	background: #fff;
+}
+.button {
+	font-size: 20px;
+	line-height: 24px;
+	text-align: center;
+}
+.button a{
+	text-decoration: none;
+	padding: 6px 44px;
+	display: inline-block;
+	color: #fff;
+	background: #000983;
+	border-radius: 10px;
+}
+.section1 {
+	padding-bottom: 24px;
+}
+
+.section1 .resize {
+display: flex;
+flex-direction: column;
+}
+.section1 .resize > * {
+	order: 1;
+}
+.section1 .resize h2{
+	order: 0;
+}
+.section1 .resize h1 {
+  margin: 0;
+  padding: 32px 0 0px;
+}
+.section1 h1 span{
+  color: #0f0;	
+}
+.section1 .text {
+	padding-left:  80px;
 }
